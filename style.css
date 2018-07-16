@@ -1,0 +1,323 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: #000;
+    margin: 0;
+}
+
+/* стили шапки */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 0;
+    justify-content: space-between;
+    font-family: 'JournalSansNew';
+    font-size: 24px;
+    color: #babec0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo:hover {
+    opacity: .7;
+}
+
+.logo a {
+    display: flex;
+    text-decoration: none;
+    color: #DCE1E3;
+}
+
+.logo img {
+    margin-top: -5px;
+    margin-right: 20px;
+}
+
+.header-links a {
+    color: #21f188 !important;
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    border-bottom: 1px solid;
+    border-color: #21f188;
+    padding-bottom: 3px;
+}
+
+.dot {
+    display: inline;
+}
+
+@media screen and (max-width: 640px) {
+    header nav {
+        margin: 0 20px;
+        padding: 30px 0 0;
+        font-size: 16px;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .logo img {
+        margin-top: 0;
+    }
+
+    .header-links {
+        text-align: right;
+        font-size: 16px;
+    }
+
+    .header-links a {
+        display: block;
+    }
+
+    .header-links a:first-child {
+        margin-bottom: 5px;
+    }
+
+    .dot {
+        display: none;
+    }
+}
+
+/* стили шапки */
+
+/* стили заголовка */
+
+header h1 {
+    margin: 150px 0 250px;
+    color: #babec0;
+    font-family: 'JournalSansNew';
+    font-size: 64px;
+    z-index: 1;
+}
+
+.wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.bg-video {
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 35%;
+    /* filter: contrast(110%); */
+}
+
+/* .bg-video source {
+    filter: contrast(110%);
+} */
+
+@media screen and (max-width: 640px) {
+    header h1 {
+        margin: 50px 20px 120px;
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .bg-video {
+        display: none;
+    }
+
+    header {
+        background-image: url(soplya\ copy\ 2.jpg);
+        background-size: 120% auto;
+        background-position: -20% 50%;
+        background-repeat: no-repeat;
+    }
+
+}
+
+/* стили заголовка */
+
+/* стили карточки услуги */
+
+.service-card {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 20px;
+    /* width: 100%; */
+    /* height: 350px; */
+    font-family: 'JournalSansNew';
+    color: #babec0;
+    margin-bottom: 40px;
+}
+
+.card-text-block {
+    width: 60%;
+    margin: 40px;
+}
+
+.card-image {
+    /* width: 40%;
+    min-height: auto; */
+    order: 0;
+    margin-right: 40px;
+    margin-top: auto;
+}
+
+.card-text-block h3 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.card-text-block p {
+    font-size: 24px;
+    line-height: 1.25;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 640px) {
+    .service-card {
+        margin-bottom: 20px;
+    }
+
+    .card-text-block h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .card-text-block p {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .card-text-block {
+        margin: 20px 20px 40px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .service-card {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card-text-block {
+        width: auto;
+    }
+
+    .card-image {
+        order: -1;
+        width: auto;
+        height: 200px;
+        margin: 20px 20px 0;
+    }
+}
+
+/* стили карточки услуги */
+
+
+/* форма с призывом */
+
+.cta-form {
+    margin: 120px 0;
+    padding: 120px 40px;
+    text-align: center;
+    font-family: 'JournalSansNew';
+    color: #303030;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.cta-form h3 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.cta-form p {
+    width: 75%;
+    margin: auto;
+    font-size: 24px;
+    line-height: 1.25;
+    padding-top: 20px;
+}
+
+.cta-form button {
+    margin-top: 40px;
+    padding: 15px 30px;
+    font-family: 'JournalSansNew';
+    font-size: 24px;
+    color: white;
+    background-color: #303030;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cta-form button:hover {
+    opacity: .9;
+}
+
+@media screen and (max-width: 640px) {
+    .cta-form {
+        margin: 80px 20px;
+        /* margin-left: 20px;
+        margin-right: 20px; */
+        padding: 80px 20px;
+    }
+
+    .cta-form h3 {
+        font-size: 20px;
+    }
+
+    .cta-form p {
+        padding-top: 10px;
+        width: auto;
+        font-size: 16px;
+        line-height: 1.375;
+    }
+
+    .cta-form button {
+        margin-top: 30px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+}
+
+/* подвал со ссылками */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 60px 0;
+    justify-content: space-between;
+    font-family: 'JournalSansNew';
+    font-size: 24px;
+    color: #babec0;
+}
+
+footer nav a {
+    color: #21f188 !important;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    border-bottom: 1px solid;
+    border-color: #21f188;
+    padding-bottom: 3px;
+}
+
+@media screen and (max-width: 640px) {
+    footer {
+        flex-direction: column-reverse;
+        padding: 0 0 40px;
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+    }
+
+    footer nav {
+        margin-bottom: 10px;
+    }
+}
